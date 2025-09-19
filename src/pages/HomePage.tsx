@@ -15,7 +15,7 @@ const HomePage = () => {
               <img 
                 src="/efh_20250716040759_894008_1b2db_322b1.jpg" 
                 alt="AI Transformational Coach - Professional Portrait"
-                className="w-full h-full object-cover object-center scale-110"
+                className="w-full h-full object-cover object-[50%_30%] scale-125"
               />
             </div>
 
