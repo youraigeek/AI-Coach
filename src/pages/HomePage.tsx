@@ -11,12 +11,14 @@ const HomePage = () => {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="animate-fade-in">
             {/* Professional Photo */}
-            <div className="w-56 h-72 mx-auto mb-8 rounded-2xl overflow-hidden border-4 border-white shadow-2xl ring-4 ring-purple-200">
-              <img 
-                src="/efh_20250716040759_894008_1b2db_322b1.jpg" 
-                alt="AI Transformational Coach - Professional Portrait"
-                className="w-full h-[350px] object-cover object-top"
-              />
+            <div 
+              className="w-56 h-72 mx-auto mb-8 rounded-2xl border-4 border-white shadow-2xl ring-4 ring-purple-200 bg-cover bg-center bg-no-repeat"
+              style={{
+                backgroundImage: "url('/efh_20250716040759_894008_1b2db_322b1.jpg')"
+              }}
+              role="img"
+              aria-label="AI Transformational Coach - Professional Portrait"
+            >
             </div>
 
             <h1 className="font-montserrat font-bold text-4xl md:text-6xl text-purple-700 mb-6">
