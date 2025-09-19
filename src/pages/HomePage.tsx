@@ -11,11 +11,11 @@ const HomePage = () => {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="animate-fade-in">
             {/* Professional Photo */}
-            <div className="w-48 h-48 mx-auto mb-8 rounded-full overflow-hidden border-4 border-white shadow-2xl ring-4 ring-purple-200">
+            <div className="w-56 h-64 mx-auto mb-8 rounded-2xl overflow-hidden border-4 border-white shadow-2xl ring-4 ring-purple-200">
               <img 
                 src="/efh_20250716040759_894008_1b2db_322b1.jpg" 
                 alt="AI Transformational Coach - Professional Portrait"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover object-center"
               />
             </div>
 
@@ -108,21 +108,21 @@ const HomePage = () => {
                 <img 
                   src="/KKK07405.JPG" 
                   alt="Professional Portrait 1"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-center"
                 />
               </div>
               <div className="w-24 h-24 rounded-lg overflow-hidden shadow-lg">
                 <img 
                   src="/KKK07840.JPG" 
                   alt="Professional Portrait 2"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-center"
                 />
               </div>
               <div className="w-24 h-24 bg-purple-50 rounded-lg flex items-center justify-center shadow-lg">
                 <img 
                   src="/mascot.png" 
                   alt="AI Coach Mascot" 
-                  className="w-16 h-16 object-contain"
+                  className="w-16 h-16 object-contain drop-shadow-sm"
                 />
               </div>
               <div className="w-24 h-24 bg-gradient-to-br from-purple-100 to-yellow-100 rounded-lg flex items-center justify-center shadow-lg">

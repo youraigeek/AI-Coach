@@ -113,7 +113,7 @@ const ContactPage = () => {
                 <img 
                   src="/efh_20250716042821_849892_454dd_c4c46.jpg" 
                   alt="AI Solopreneurship Coach - Ready to Help"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-center"
                 />
               </div>
               {/* Mascot accent */}
@@ -121,7 +121,7 @@ const ContactPage = () => {
                 <img 
                   src="/mascot.png" 
                   alt="AI Coach Mascot" 
-                  className="w-full h-full object-contain"
+                  className="w-full h-full object-contain drop-shadow-sm"
                 />
               </div>
             </div>
@@ -134,17 +134,17 @@ const ContactPage = () => {
               <img 
                 src="/360-Digit.png" 
                 alt="360DigiTMG Certified" 
-                className="h-8 w-auto object-contain"
+                className="h-8 w-auto object-contain object-center"
               />
               <img 
                 src="/Best-AI-Coach.png" 
                 alt="Best AI Coach 2025" 
-                className="h-8 w-auto object-contain"
+                className="h-8 w-auto object-contain object-center"
               />
               <img 
                 src="/Outskill.png" 
                 alt="Outskill Certified" 
-                className="h-8 w-auto object-contain"
+                className="h-8 w-auto object-contain object-center"
               />
             </div>
           </div>

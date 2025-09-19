@@ -21,7 +21,7 @@ const ServicesPage = () => {
                 <img 
                   src="/WhatsApp Image 2025-03-18 at 5.57.42 PM.jpeg" 
                   alt="AI Solopreneurship Coach - Services"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-center"
                 />
               </div>
               {/* Mascot accent */}
@@ -29,7 +29,7 @@ const ServicesPage = () => {
                 <img 
                   src="/mascot.png" 
                   alt="AI Coach Mascot" 
-                  className="w-full h-full object-contain"
+                  className="w-full h-full object-contain drop-shadow-sm"
                 />
               </div>
             </div>
@@ -59,7 +59,7 @@ const ServicesPage = () => {
                   <img 
                     src="/360-Digit.png" 
                     alt="360DigiTMG" 
-                    className="h-12 w-auto object-contain"
+                    className="h-12 w-auto object-contain object-center"
                   />
                   <div>
                     <h4 className="font-semibold text-gray-900">AI @ Work: 10X Productivity</h4>
@@ -71,7 +71,7 @@ const ServicesPage = () => {
                   <img 
                     src="/Best-AI-Coach.png" 
                     alt="Best AI Coach" 
-                    className="h-12 w-auto object-contain"
+                    className="h-12 w-auto object-contain object-center"
                   />
                   <div>
                     <h4 className="font-semibold text-gray-900">Best AI Coach 2025</h4>
@@ -83,7 +83,7 @@ const ServicesPage = () => {
                   <img 
                     src="/Outskill.png" 
                     alt="Outskill" 
-                    className="h-12 w-auto object-contain"
+                    className="h-12 w-auto object-contain object-center"
                   />
                   <div>
                     <h4 className="font-semibold text-gray-900">Professional Development</h4>
