@@ -12,9 +12,12 @@ const HomePage = () => {
           <div className="animate-fade-in">
             {/* Professional Photo */}
             <div 
-              className="w-56 h-72 mx-auto mb-8 rounded-2xl border-4 border-white shadow-2xl ring-4 ring-purple-200 bg-cover bg-center bg-no-repeat"
+              className="w-56 h-72 mx-auto mb-8 rounded-2xl border-4 border-white shadow-2xl ring-4 ring-purple-200"
               style={{
-                backgroundImage: "url('/efh_20250716040759_894008_1b2db_322b1.jpg')"
+                backgroundImage: "url('/efh_20250716040759_894008_1b2db_322b1.jpg')",
+                backgroundSize: 'cover',
+                backgroundPosition: 'center top',
+                backgroundRepeat: 'no-repeat'
               }}
               role="img"
               aria-label="AI Transformational Coach - Professional Portrait"
