@@ -21,7 +21,7 @@ const TestimonialsPage = () => {
                 <img 
                   src="/WhatsApp Image 2025-03-18 at 5.57.42 PM (1).jpeg" 
                   alt="AI Solopreneurship Success Stories"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-center"
                 />
               </div>
               {/* Mascot accent */}
@@ -29,7 +29,7 @@ const TestimonialsPage = () => {
                 <img 
                   src="/mascot.png" 
                   alt="AI Coach Mascot" 
-                  className="w-full h-full object-contain"
+                  className="w-full h-full object-contain drop-shadow-sm"
                 />
               </div>
             </div>

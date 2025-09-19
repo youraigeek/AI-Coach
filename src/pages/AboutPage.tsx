@@ -29,7 +29,7 @@ const AboutPage = () => {
                 <img 
                   src="/WhatsApp Image 2025-03-18 at 5.57.40 PM.jpeg" 
                   alt="AI Coach in Professional Setting"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-center"
                 />
               </div>
               {/* Decorative elements */}
@@ -41,7 +41,7 @@ const AboutPage = () => {
                 <img 
                   src="/mascot.png" 
                   alt="AI Coach Mascot" 
-                  className="w-full h-full object-contain"
+                  className="w-full h-full object-contain drop-shadow-sm"
                 />
               </div>
             </div>
@@ -130,7 +130,7 @@ const AboutPage = () => {
                   <img 
                     src="/360-Digit.png" 
                     alt="360DigiTMG AI @ Work: A 10X Productivity Series Certificate"
-                    className="w-full h-full object-contain p-2"
+                    className="w-full h-full object-contain object-center p-2"
                   />
                 </div>
                 <h3 className="font-raleway font-semibold text-lg text-gray-900 mb-2">
@@ -152,7 +152,7 @@ const AboutPage = () => {
                   <img 
                     src="/Best-AI-Coach.png" 
                     alt="Best AI Coach - Business Growth Summit 2025"
-                    className="w-full h-full object-contain p-2"
+                    className="w-full h-full object-contain object-center p-2"
                   />
                 </div>
                 <h3 className="font-raleway font-semibold text-lg text-gray-900 mb-2">
@@ -174,7 +174,7 @@ const AboutPage = () => {
                   <img 
                     src="/Outskill.png" 
                     alt="Outskill Professional Certification"
-                    className="w-full h-full object-contain p-2"
+                    className="w-full h-full object-contain object-center p-2"
                   />
                 </div>
                 <h3 className="font-raleway font-semibold text-lg text-gray-900 mb-2">

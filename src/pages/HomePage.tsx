@@ -15,7 +15,7 @@ const HomePage = () => {
               <img 
                 src="/efh_20250716040759_894008_1b2db_322b1.jpg" 
                 alt="AI Transformational Coach - Professional Portrait"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover object-center"
               />
             </div>
 
@@ -108,21 +108,21 @@ const HomePage = () => {
                 <img 
                   src="/KKK07405.JPG" 
                   alt="Professional Portrait 1"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-center"
                 />
               </div>
               <div className="w-24 h-24 rounded-lg overflow-hidden shadow-lg">
                 <img 
                   src="/KKK07840.JPG" 
                   alt="Professional Portrait 2"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-center"
                 />
               </div>
               <div className="w-24 h-24 bg-purple-50 rounded-lg flex items-center justify-center shadow-lg">
                 <img 
                   src="/mascot.png" 
                   alt="AI Coach Mascot" 
-                  className="w-16 h-16 object-contain"
+                  className="w-16 h-16 object-contain drop-shadow-sm"
                 />
               </div>
               <div className="w-24 h-24 bg-gradient-to-br from-purple-100 to-yellow-100 rounded-lg flex items-center justify-center shadow-lg">

@@ -39,7 +39,7 @@ const Navbar = () => {
               <img 
                 src="/mascot.png" 
                 alt="AI Coach Logo" 
-                className="w-full h-full object-contain"
+                className="w-full h-full object-contain drop-shadow-sm"
               />
             </div>
             <span className="font-montserrat font-bold text-xl text-gray-900">

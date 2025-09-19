@@ -30,7 +30,7 @@ const MissionPage = () => {
                 <img 
                   src="/WhatsApp Image 2025-03-18 at 5.57.41 PM.jpeg" 
                   alt="AI Coach Professional Mission"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-center"
                 />
               </div>
               <div className="absolute -top-4 -right-4 w-24 h-24 bg-yellow-400/20 rounded-full blur-xl"></div>
