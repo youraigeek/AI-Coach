@@ -11,7 +11,7 @@ const HomePage = () => {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="animate-fade-in">
             {/* Professional Photo */}
-            <div className="w-56 h-64 mx-auto mb-8 rounded-2xl overflow-hidden border-4 border-gray-200 shadow-2xl ring-4 ring-purple-200 bg-white">
+            <div className="w-56 h-64 mx-auto mb-8 mt-4 rounded-2xl overflow-hidden border-4 border-gray-300 shadow-2xl ring-4 ring-purple-200 bg-white">
               <img 
                 src="/efh_20250716040759_894008_1b2db_322b1.jpg" 
                 alt="AI Transformational Coach - Professional Portrait"
