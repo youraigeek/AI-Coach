@@ -73,14 +73,6 @@
         </svg>
     </div>
 
-    <!-- Vapi Script -->
-    <script
-        src="https://unpkg.com/@vapi-ai/client-sdk-react/dist/embed/widget.umd.js"
-        type="text/javascript"
-        onload="initializeVapi()"
-        onerror="showFallback()">
-    </script>
-
     <script>
         let vapiInitialized = false;
         
@@ -122,5 +114,14 @@
             }
         }, 5000);
     </script>
+
+    <!-- Vapi Script -->
+    <script
+        src="https://unpkg.com/@vapi-ai/client-sdk-react/dist/embed/widget.umd.js"
+        type="text/javascript"
+        onload="initializeVapi()"
+        onerror="showFallback()">
+    </script>
+
 </body>
 </html></vapi-widget>
