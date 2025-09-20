@@ -203,7 +203,7 @@ const TermsOfServicePage = () => {
                 <div className="space-y-4 text-gray-700">
                   <p>For questions about these Terms of Service:</p>
                   <div className="bg-gray-50 p-6 rounded-lg">
-                    <p><strong>Email:</strong> legal@aicoach.com</p>
+                    <p><strong>Email:</strong> legal@aisolopreneur.com</p>
                     <p><strong>Subject Line:</strong> Terms of Service Inquiry</p>
                     <p><strong>Response Time:</strong> Within 48 hours</p>
                   </div>

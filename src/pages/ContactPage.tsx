@@ -112,7 +112,7 @@ const ContactPage = () => {
               <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl">
                 <img 
                   src="/efh_20250716042821_849892_454dd_c4c46.jpg" 
-                  alt="AI Solopreneurship Coach - Ready to Help"
+                  alt="AI Solopreneur - Ready to Help"
                   className="w-full h-full object-cover object-top"
                 />
               </div>
@@ -120,7 +120,7 @@ const ContactPage = () => {
               <div className="absolute -bottom-4 -right-4 w-16 h-16 bg-white rounded-full p-2 shadow-lg">
                 <img 
                   src="/mascot-removebg-preview (6).png" 
-                  alt="AI Coach Mascot" 
+                  alt="AI Solopreneur Mascot" 
                   className="w-full h-full object-contain drop-shadow-sm"
                 />
               </div>
