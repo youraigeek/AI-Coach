@@ -37,7 +37,7 @@ const Navbar = () => {
           <Link to="/" className="flex items-center space-x-2 group">
             <div className="w-10 h-10 bg-white rounded-lg p-1 group-hover:scale-105 transition-transform duration-200 shadow-md">
               <img 
-                src="/mascot.png" 
+                src="/mascot-removebg-preview (6).png" 
                 alt="AI Coach Logo" 
                 className="w-full h-full object-contain drop-shadow-sm"
               />

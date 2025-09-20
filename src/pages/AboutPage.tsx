@@ -39,7 +39,7 @@ const AboutPage = () => {
               {/* Mascot accent */}
               <div className="absolute -bottom-6 -right-6 w-20 h-20 bg-white rounded-full p-2 shadow-lg">
                 <img 
-                  src="/mascot.png" 
+                  src="/mascot-removebg-preview (6).png" 
                   alt="AI Coach Mascot" 
                   className="w-full h-full object-contain drop-shadow-sm"
                 />

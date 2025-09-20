@@ -16,7 +16,7 @@ const MissionPage = () => {
               </p>
               <div className="flex items-center justify-center lg:justify-start space-x-4">
                 <img 
-                  src="/mascot.png" 
+                  src="/mascot-removebg-preview (6).png" 
                   alt="AI Coach Mascot" 
                   className="w-16 h-16 object-contain"
                 />

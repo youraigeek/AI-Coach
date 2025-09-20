@@ -49,7 +49,7 @@ const HomePage = () => {
                     <div className="absolute inset-0 bg-gradient-to-br from-purple-200 to-yellow-200 rounded-full blur-xl opacity-30"></div>
                     <div className="relative bg-gradient-to-br from-purple-50 to-yellow-50 rounded-full p-6 shadow-lg">
                       <img 
-                        src="/mascot.png" 
+                        src="/mascot-removebg-preview (6).png" 
                         alt="AI Coach Mascot" 
                         className="w-20 h-20 mx-auto drop-shadow-md"
                       />
@@ -130,7 +130,7 @@ const HomePage = () => {
               </div>
               <div className="w-24 h-24 bg-purple-50 rounded-lg flex items-center justify-center shadow-lg">
                 <img 
-                  src="/mascot.png" 
+                  src="/mascot-removebg-preview (6).png" 
                   alt="AI Coach Mascot" 
                   className="w-16 h-16 object-contain drop-shadow-sm"
                 />
