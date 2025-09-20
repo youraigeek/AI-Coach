@@ -12,8 +12,35 @@ import BlogPostPage from './pages/BlogPostPage';
 import ContactPage from './pages/ContactPage';
 import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
 import TermsOfServicePage from './pages/TermsOfServicePage';
+import { useEffect } from 'react';
 
 function App() {
+  useEffect(() => {
+    // Initialize Vapi widget after component mounts
+    const initVapiWidget = () => {
+      if (typeof window !== 'undefined' && window.document) {
+        const existingWidget = document.querySelector('vapi-widget');
+        if (!existingWidget) {
+          const vapiWidget = document.createElement('vapi-widget');
+          vapiWidget.setAttribute('assistant-id', '782931dc-51f9-4c96-9f99-a56f967264d2');
+          vapiWidget.setAttribute('public-key', '45b82946-e45a-48e4-b450-a361346d45ed');
+          document.body.appendChild(vapiWidget);
+        }
+      }
+    };
+
+    // Wait for the Vapi script to load
+    const checkVapiScript = () => {
+      if (window.VapiWidget || document.querySelector('script[src*="vapi-ai"]')) {
+        initVapiWidget();
+      } else {
+        setTimeout(checkVapiScript, 100);
+      }
+    };
+
+    checkVapiScript();
+  }, []);
+
   return (
     <Router>
       <div className="min-h-screen bg-white">
