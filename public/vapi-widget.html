@@ -12,21 +12,11 @@
             overflow: hidden;
         }
         
-        vapi-widget {
-            position: fixed !important;
-            bottom: 0 !important;
-            right: 0 !important;
-            z-index: 999999 !important;
-            width: auto !important;
-            height: auto !important;
-            min-width: 60px !important;
-            min-height: 60px !important;
-            display: block !important;
-            visibility: visible !important;
-            opacity: 1 !important;
-            background-color: white !important;
-            border-radius: 50% !important;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+        #vapi-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 999999;
         }
         
         /* Fallback button styles */
@@ -36,7 +26,7 @@
             right: 0;
             width: 60px;
             height: 60px;
-            background: white;
+            background: #6A0DAD;
             border: 2px solid #6A0DAD;
             border-radius: 50%;
             display: flex;
@@ -55,16 +45,13 @@
         .fallback-button svg {
             width: 24px;
             height: 24px;
-            fill: #6A0DAD;
+            fill: white;
         }
     </style>
 </head>
 <body>
-    <!-- Vapi Widget -->
-    <vapi-widget 
-        assistant-id="782931dc-51f9-4c96-9f99-a56f967264d2" 
-        public-key="45b82946-e45a-48e4-b450-a361346d45ed">
-    </vapi-widget>
+    <!-- Vapi Container -->
+    <div id="vapi-container"></div>
 
     <!-- Fallback Button (shown if Vapi widget fails) -->
     <div id="fallback-button" class="fallback-button" style="display: none;">
@@ -74,19 +61,96 @@
     </div>
 
     <script>
+        let vapi;
         let vapiInitialized = false;
         
         function initializeVapi() {
             console.log('Vapi script loaded successfully');
             
-            // Wait a bit for the widget to initialize
-            setTimeout(() => {
-                const widget = document.querySelector('vapi-widget');
-                if (widget && (widget.offsetWidth > 0 || widget.offsetHeight > 0)) {
-                    console.log('Vapi widget initialized successfully');
-                    vapiInitialized = true;
-                } else {
-                    console.log('Vapi widget not visible, showing fallback');
+            try {
+                // Initialize Vapi with proper configuration
+                vapi = new Vapi({
+                    assistantId: "782931dc-51f9-4c96-9f99-a56f967264d2",
+                    publicKey: "45b82946-e45a-48e4-b450-a361346d45ed",
+                    voiceMode: true
+                });
+                
+                console.log('Vapi initialized successfully');
+                vapiInitialized = true;
+                
+                // Create a button to start the conversation
+                const container = document.getElementById('vapi-container');
+                const button = document.createElement('button');
+                button.innerHTML = `
+                    <svg viewBox="0 0 24 24" style="width: 24px; height: 24px; fill: white;">
+                        <path d="M12 14c1.66 0 2.99-1.34 2.99-3L15 5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm5.3-3c0 3-2.54 5.1-5.3 5.1S6.7 14 6.7 11H5c0 3.41 2.72 6.23 6 6.72V21h2v-3.28c3.28-.48 6-3.3 6-6.72h-1.7z"/>
+                    </svg>
+                `;
+                button.style.cssText = `
+                    width: 60px;
+                    height: 60px;
+                    background: #6A0DAD;
+                    border: none;
+                    border-radius: 50%;
+                    cursor: pointer;
+                    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+                    transition: transform 0.2s ease;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                `;
+                
+                button.onmouseover = () => button.style.transform = 'scale(1.1)';
+                button.onmouseout = () => button.style.transform = 'scale(1)';
+                
+                button.onclick = () => {
+                    if (vapi) {
+                        vapi.start();
+                    }
+                };
+                
+                container.appendChild(button);
+                
+            } catch (error) {
+                console.error('Failed to initialize Vapi:', error);
+                showFallback();
+            }
+        }
+        
+        function showFallback() {
+            console.log('Showing fallback button');
+            const fallbackButton = document.getElementById('fallback-button');
+            const container = document.getElementById('vapi-container');
+            
+            if (container) {
+                container.style.display = 'none';
+            }
+            
+            fallbackButton.style.display = 'flex';
+            fallbackButton.onclick = function() {
+                alert('Voice assistant is currently unavailable. Please try again later or contact support.');
+            };
+        }
+        
+        // Check if Vapi loaded after 5 seconds
+        setTimeout(() => {
+            if (!vapiInitialized) {
+                console.log('Vapi failed to initialize within 5 seconds, showing fallback');
+                showFallback();
+            }
+        }, 5000);
+    </script>
+
+    <!-- Vapi Script -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/@vapi-ai/web@latest/dist/index.js"
+        type="text/javascript"
+        onload="initializeVapi()"
+        onerror="showFallback()">
+    </script>
+
+</body>
+</html>
                     showFallback();
                 }
             }, 3000);
