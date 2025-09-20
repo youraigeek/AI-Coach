@@ -20,7 +20,7 @@ const ServicesPage = () => {
               <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl">
                 <img 
                   src="/WhatsApp Image 2025-03-18 at 5.57.42 PM.jpeg" 
-                  alt="AI Solopreneurship Coach - Services"
+                  alt="AI Solopreneur - Services"
                   className="w-full h-full object-cover object-center"
                 />
               </div>
@@ -28,7 +28,7 @@ const ServicesPage = () => {
               <div className="absolute -bottom-4 -right-4 w-16 h-16 bg-white rounded-full p-2 shadow-lg">
                 <img 
                   src="/mascot-removebg-preview (6).png" 
-                  alt="AI Coach Mascot" 
+                  alt="AI Solopreneur Mascot" 
                   className="w-full h-full object-contain drop-shadow-sm"
                 />
               </div>
@@ -70,11 +70,11 @@ const ServicesPage = () => {
                 <div className="flex items-center space-x-4 bg-white p-4 rounded-lg shadow-sm">
                   <img 
                     src="/Best-AI-Coach.png" 
-                    alt="Best AI Coach" 
+                    alt="Best AI Solopreneur" 
                     className="h-12 w-auto object-contain object-center"
                   />
                   <div>
-                    <h4 className="font-semibold text-gray-900">Best AI Coach 2025</h4>
+                    <h4 className="font-semibold text-gray-900">Best AI Solopreneur 2025</h4>
                     <p className="text-sm text-gray-600">Business Growth Summit - Industry Recognition</p>
                   </div>
                 </div>
@@ -104,7 +104,7 @@ const ServicesPage = () => {
                 </li>
                 <li className="flex items-start space-x-2">
                   <div className="w-2 h-2 bg-yellow-500 rounded-full mt-2"></div>
-                  <span>Industry recognition as a leading AI coach and transformation specialist</span>
+                  <span>Industry recognition as a leading AI solopreneur and transformation specialist</span>
                 </li>
                 <li className="flex items-start space-x-2">
                   <div className="w-2 h-2 bg-purple-500 rounded-full mt-2"></div>
@@ -135,7 +135,7 @@ const ServicesPage = () => {
             {/* Service cards with professional images */}
             <div className="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow duration-300">
               <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <img src="/mascot-removebg-preview (6).png" alt="AI Coach" className="w-10 h-10 object-contain" />
+                <img src="/mascot-removebg-preview (6).png" alt="AI Solopreneur" className="w-10 h-10 object-contain" />
               </div>
               <h3 className="font-raleway font-semibold text-lg text-center mb-3">1-on-1 AI Coaching</h3>
               <p className="text-gray-600 text-center text-sm">
@@ -145,7 +145,7 @@ const ServicesPage = () => {
 
             <div className="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow duration-300">
               <div className="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <img src="/mascot-removebg-preview (6).png" alt="AI Coach" className="w-10 h-10 object-contain" />
+                <img src="/mascot-removebg-preview (6).png" alt="AI Solopreneur" className="w-10 h-10 object-contain" />
               </div>
               <h3 className="font-raleway font-semibold text-lg text-center mb-3">Group Workshops</h3>
               <p className="text-gray-600 text-center text-sm">
@@ -155,7 +155,7 @@ const ServicesPage = () => {
 
             <div className="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow duration-300">
               <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <img src="/mascot-removebg-preview (6).png" alt="AI Coach" className="w-10 h-10 object-contain" />
+                <img src="/mascot-removebg-preview (6).png" alt="AI Solopreneur" className="w-10 h-10 object-contain" />
               </div>
               <h3 className="font-raleway font-semibold text-lg text-center mb-3">Knowledge Programs</h3>
               <p className="text-gray-600 text-center text-sm">

@@ -15,12 +15,12 @@ const Footer = () => {
               <div className="w-10 h-10 bg-white rounded-lg p-1 shadow-md">
                 <img 
                   src="/mascot-removebg-preview (6).png" 
-                  alt="AI Coach Logo" 
+                  alt="AI Solopreneur Logo" 
                   className="w-full h-full object-contain drop-shadow-sm"
                 />
               </div>
               <span className="font-montserrat font-bold text-xl">
-                AI<span className="text-purple-400">Coach</span>
+                AI<span className="text-purple-400">Solopreneur</span>
               </span>
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed">
@@ -81,7 +81,7 @@ const Footer = () => {
                 className="flex items-center space-x-2 text-gray-400 hover:text-purple-400 transition-colors duration-200 text-sm"
               >
                 <Mail className="h-4 w-4" />
-                <span>coach@example.com</span>
+                <span>solopreneur@example.com</span>
               </a>
               <div className="flex space-x-4 pt-2">
                 <a
@@ -107,7 +107,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              © {currentYear} AI Transformational Coach. All rights reserved.
+              © {currentYear} AI Solopreneur. All rights reserved.
             </p>
             <p className="text-gray-400 text-sm mt-2 md:mt-0">
               Built with ❤️ for aspiring entrepreneurs

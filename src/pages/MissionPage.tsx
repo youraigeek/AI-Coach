@@ -17,7 +17,7 @@ const MissionPage = () => {
               <div className="flex items-center justify-center lg:justify-start space-x-4">
                 <img 
                   src="/mascot-removebg-preview (6).png" 
-                  alt="AI Coach Mascot" 
+                  alt="AI Solopreneur Mascot" 
                   className="w-16 h-16 object-contain"
                 />
                 <div className="accent-text text-lg">
@@ -29,7 +29,7 @@ const MissionPage = () => {
               <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl">
                 <img 
                   src="/WhatsApp Image 2025-03-18 at 5.57.41 PM.jpeg" 
-                  alt="AI Coach Professional Mission"
+                  alt="AI Solopreneur Professional Mission"
                   className="w-full h-full object-cover object-center"
                 />
               </div>

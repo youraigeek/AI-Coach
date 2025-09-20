@@ -39,13 +39,13 @@ const Navbar = () => {
           <Link to="/" className="flex items-center space-x-2 group">
             <div className="w-10 h-10 bg-white rounded-lg p-1 group-hover:scale-105 transition-transform duration-200 shadow-md">
               <img 
-                src="/mascot-removebg-preview (6).png" 
-                alt="AI Coach Logo" 
+                src="/mascot-removebg-preview (6).png"
+                alt="AI Solopreneur Logo" 
                 className="w-full h-full object-contain drop-shadow-sm"
               />
             </div>
             <span className="font-montserrat font-bold text-xl text-gray-900">
-              AI<span className="text-purple-700">Coach</span>
+              AI<span className="text-purple-700">Solopreneur</span>
             </span>
           </Link>
 

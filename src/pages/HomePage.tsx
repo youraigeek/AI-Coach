@@ -27,7 +27,7 @@ const HomePage = () => {
             </h1>
 
             <p className="font-open-sans text-xl md:text-2xl text-gray-600 mb-8 max-w-4xl mx-auto leading-relaxed">
-              I'm your AI Generalist and Transformational Coach, empowering ambitious corporate professionals 
+              I'm your AI Generalist and Solopreneur Specialist, empowering ambitious corporate professionals 
               to leverage artificial intelligence and build their own AI Solopreneurship empire.
             </p>
 
@@ -50,7 +50,7 @@ const HomePage = () => {
                     <div className="relative bg-gradient-to-br from-purple-50 to-yellow-50 rounded-full p-6 shadow-lg">
                       <img 
                         src="/mascot-removebg-preview (6).png" 
-                        alt="AI Coach Mascot" 
+                        alt="AI Solopreneur Mascot" 
                         className="w-20 h-20 mx-auto drop-shadow-md"
                       />
                     </div>
@@ -91,10 +91,10 @@ const HomePage = () => {
             <div className="flex items-center space-x-3 bg-white px-4 py-2 rounded-lg shadow-sm">
               <img 
                 src="/Best-AI-Coach.png" 
-                alt="Best AI Coach 2025" 
+                alt="Best AI Solopreneur 2025" 
                 className="h-8 w-auto object-contain"
               />
-              <span className="text-xs font-semibold text-gray-700">Best AI Coach 2025</span>
+              <span className="text-xs font-semibold text-gray-700">Best AI Solopreneur 2025</span>
             </div>
             <div className="flex items-center space-x-3 bg-white px-4 py-2 rounded-lg shadow-sm">
               <img 
@@ -131,7 +131,7 @@ const HomePage = () => {
               <div className="w-24 h-24 bg-purple-50 rounded-lg flex items-center justify-center shadow-lg">
                 <img 
                   src="/mascot-removebg-preview (6).png" 
-                  alt="AI Coach Mascot" 
+                  alt="AI Solopreneur Mascot" 
                   className="w-16 h-16 object-contain drop-shadow-sm"
                 />
               </div>
