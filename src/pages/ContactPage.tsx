@@ -113,7 +113,7 @@ const ContactPage = () => {
                 <img 
                   src="/efh_20250716042821_849892_454dd_c4c46.jpg" 
                   alt="AI Solopreneurship Coach - Ready to Help"
-                  className="w-full h-full object-cover object-center"
+                  className="w-full h-full object-cover object-top"
                 />
               </div>
               {/* Mascot accent */}
