@@ -28,7 +28,7 @@ const AboutPage = () => {
               <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl">
                 <img 
                   src="/WhatsApp Image 2025-03-18 at 5.57.40 PM.jpeg" 
-                  alt="AI Coach in Professional Setting"
+                  alt="AI Solopreneur in Professional Setting"
                   className="w-full h-full object-cover object-center"
                 />
               </div>
@@ -39,8 +39,8 @@ const AboutPage = () => {
               {/* Mascot accent */}
               <div className="absolute -bottom-6 -right-6 w-20 h-20 bg-white rounded-full p-2 shadow-lg">
                 <img 
-                  src="/mascot.png" 
-                  alt="AI Coach Mascot" 
+                  src="/mascot-removebg-preview (6).png" 
+                  alt="AI Solopreneur Mascot" 
                   className="w-full h-full object-contain drop-shadow-sm"
                 />
               </div>
@@ -151,12 +151,12 @@ const AboutPage = () => {
                 <div className="w-full h-48 mb-4 rounded-lg overflow-hidden bg-gray-900 shadow-md">
                   <img 
                     src="/Best-AI-Coach.png" 
-                    alt="Best AI Coach - Business Growth Summit 2025"
+                    alt="Best AI Solopreneur - Business Growth Summit 2025"
                     className="w-full h-full object-contain object-center p-2"
                   />
                 </div>
                 <h3 className="font-raleway font-semibold text-lg text-gray-900 mb-2">
-                  Best AI Coach 2025
+                  Best AI Solopreneur 2025
                 </h3>
                 <p className="text-sm text-gray-600 mb-3">
                   Business Growth Summit

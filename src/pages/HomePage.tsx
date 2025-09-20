@@ -11,11 +11,11 @@ const HomePage = () => {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="animate-fade-in">
             {/* Professional Photo */}
-            <div className="w-56 h-64 mx-auto mb-8 rounded-2xl overflow-hidden border-4 border-white shadow-2xl ring-4 ring-purple-200">
+            <div className="w-56 h-64 mx-auto mb-8 mt-4 rounded-2xl overflow-hidden border-4 border-gray-300 shadow-2xl ring-4 ring-purple-200 bg-white">
               <img 
                 src="/efh_20250716040759_894008_1b2db_322b1.jpg" 
                 alt="AI Transformational Coach - Professional Portrait"
-                className="w-full h-full object-cover object-center"
+                className="w-full h-full object-cover object-top"
               />
             </div>
 
@@ -27,7 +27,7 @@ const HomePage = () => {
             </h1>
 
             <p className="font-open-sans text-xl md:text-2xl text-gray-600 mb-8 max-w-4xl mx-auto leading-relaxed">
-              I'm your AI Generalist and Transformational Coach, empowering ambitious corporate professionals 
+              I'm your AI Generalist and Solopreneur Specialist, empowering ambitious corporate professionals 
               to leverage artificial intelligence and build their own AI Solopreneurship empire.
             </p>
 
@@ -43,19 +43,29 @@ const HomePage = () => {
 
             {/* Mascot Video Section */}
             <div className="relative max-w-md mx-auto">
-              <div className="bg-gradient-to-br from-yellow-50 to-purple-50 rounded-xl p-8 shadow-xl border-2 border-white">
+              <div className="bg-white rounded-2xl p-8 shadow-2xl border border-gray-100 hover:shadow-3xl transition-all duration-300">
                 <div className="text-center mb-4">
-                  <img 
-                    src="/mascot.png" 
-                    alt="AI Coach Mascot" 
-                    className="w-32 h-32 mx-auto mb-4 drop-shadow-lg"
-                  />
-                  <h3 className="font-raleway font-semibold text-lg text-purple-700 mb-2">
+                  <div className="relative inline-block mb-6">
+                    <div className="absolute inset-0 bg-gradient-to-br from-purple-200 to-yellow-200 rounded-full blur-xl opacity-30"></div>
+                    <div className="relative bg-gradient-to-br from-purple-50 to-yellow-50 rounded-full p-6 shadow-lg">
+                      <img 
+                        src="/mascot-removebg-preview (6).png" 
+                        alt="AI Solopreneur Mascot" 
+                        className="w-20 h-20 mx-auto drop-shadow-md"
+                      />
+                    </div>
+                  </div>
+                  <h3 className="font-raleway font-bold text-xl text-gray-900 mb-3">
                     Meet Your AI Transformation Guide
                   </h3>
-                  <p className="text-gray-600 text-sm">
-                    Your friendly companion on the journey from corporate professional to business owner
+                  <p className="text-gray-600 text-sm leading-relaxed max-w-xs mx-auto">
+                    Your dedicated AI specialist guiding ambitious professionals toward solopreneurship success
                   </p>
+                  <div className="mt-4 flex justify-center space-x-2">
+                    <div className="w-2 h-2 bg-purple-400 rounded-full"></div>
+                    <div className="w-2 h-2 bg-yellow-400 rounded-full"></div>
+                    <div className="w-2 h-2 bg-purple-400 rounded-full"></div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -81,10 +91,10 @@ const HomePage = () => {
             <div className="flex items-center space-x-3 bg-white px-4 py-2 rounded-lg shadow-sm">
               <img 
                 src="/Best-AI-Coach.png" 
-                alt="Best AI Coach 2025" 
+                alt="Best AI Solopreneur 2025" 
                 className="h-8 w-auto object-contain"
               />
-              <span className="text-xs font-semibold text-gray-700">Best AI Coach 2025</span>
+              <span className="text-xs font-semibold text-gray-700">Best AI Solopreneur 2025</span>
             </div>
             <div className="flex items-center space-x-3 bg-white px-4 py-2 rounded-lg shadow-sm">
               <img 
@@ -120,8 +130,8 @@ const HomePage = () => {
               </div>
               <div className="w-24 h-24 bg-purple-50 rounded-lg flex items-center justify-center shadow-lg">
                 <img 
-                  src="/mascot.png" 
-                  alt="AI Coach Mascot" 
+                  src="/mascot-removebg-preview (6).png" 
+                  alt="AI Solopreneur Mascot" 
                   className="w-16 h-16 object-contain drop-shadow-sm"
                 />
               </div>

@@ -229,7 +229,7 @@ const BlogPage = () => {
                             {formatDate(post.published_at)}
                             <span className="mx-2">•</span>
                             <User className="h-4 w-4 mr-1" />
-                            AI Coach
+                            AI Solopreneur
                           </div>
                           <h3 className="font-raleway font-semibold text-lg text-gray-900 mb-3 line-clamp-2 group-hover:text-purple-700 transition-colors duration-200">
                             {post.title}

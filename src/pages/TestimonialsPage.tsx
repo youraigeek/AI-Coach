@@ -20,15 +20,15 @@ const TestimonialsPage = () => {
               <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl">
                 <img 
                   src="/WhatsApp Image 2025-03-18 at 5.57.42 PM (1).jpeg" 
-                  alt="AI Solopreneurship Success Stories"
+                  alt="AI Solopreneur Success Stories"
                   className="w-full h-full object-cover object-center"
                 />
               </div>
               {/* Mascot accent */}
               <div className="absolute -bottom-4 -right-4 w-16 h-16 bg-white rounded-full p-2 shadow-lg">
                 <img 
-                  src="/mascot.png" 
-                  alt="AI Coach Mascot" 
+                  src="/mascot-removebg-preview (6).png" 
+                  alt="AI Solopreneur Mascot" 
                   className="w-full h-full object-contain drop-shadow-sm"
                 />
               </div>
@@ -54,7 +54,7 @@ const TestimonialsPage = () => {
             <div className="bg-gray-50 rounded-lg p-6 shadow-md">
               <div className="flex items-center mb-4">
                 <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center">
-                  <img src="/mascot.png" alt="Success" className="w-8 h-8 object-contain" />
+                  <img src="/mascot-removebg-preview (6).png" alt="AI Solopreneur Success" className="w-8 h-8 object-contain" />
                 </div>
                 <div className="ml-3">
                   <h4 className="font-semibold text-gray-900">Corporate Executive</h4>
@@ -70,7 +70,7 @@ const TestimonialsPage = () => {
             <div className="bg-gray-50 rounded-lg p-6 shadow-md">
               <div className="flex items-center mb-4">
                 <div className="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center">
-                  <img src="/mascot.png" alt="Success" className="w-8 h-8 object-contain" />
+                  <img src="/mascot-removebg-preview (6).png" alt="AI Solopreneur Success" className="w-8 h-8 object-contain" />
                 </div>
                 <div className="ml-3">
                   <h4 className="font-semibold text-gray-900">Marketing Director</h4>
@@ -86,7 +86,7 @@ const TestimonialsPage = () => {
             <div className="bg-gray-50 rounded-lg p-6 shadow-md">
               <div className="flex items-center mb-4">
                 <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center">
-                  <img src="/mascot.png" alt="Success" className="w-8 h-8 object-contain" />
+                  <img src="/mascot-removebg-preview (6).png" alt="AI Solopreneur Success" className="w-8 h-8 object-contain" />
                 </div>
                 <div className="ml-3">
                   <h4 className="font-semibold text-gray-900">Operations Manager</h4>

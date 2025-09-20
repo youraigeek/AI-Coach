@@ -155,7 +155,7 @@ const PrivacyPolicyPage = () => {
                 <div className="space-y-4 text-gray-700">
                   <p>If you have questions about this Privacy Policy or your personal information:</p>
                   <div className="bg-gray-50 p-6 rounded-lg">
-                    <p><strong>Email:</strong> privacy@aicoach.com</p>
+                    <p><strong>Email:</strong> privacy@aisolopreneur.com</p>
                     <p><strong>Subject Line:</strong> Privacy Policy Inquiry</p>
                     <p><strong>Response Time:</strong> Within 48 hours</p>
                   </div>
