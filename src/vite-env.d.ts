@@ -5,7 +5,6 @@ declare namespace JSX {
     'vapi-widget': {
       'assistant-id': string;
       'public-key': string;
-      mode: string;
     };
   }
 }
