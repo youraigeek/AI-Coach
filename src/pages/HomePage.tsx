@@ -43,19 +43,29 @@ const HomePage = () => {
 
             {/* Mascot Video Section */}
             <div className="relative max-w-md mx-auto">
-              <div className="bg-gradient-to-br from-yellow-50 to-purple-50 rounded-xl p-8 shadow-xl border-2 border-white">
+              <div className="bg-white rounded-2xl p-8 shadow-2xl border border-gray-100 hover:shadow-3xl transition-all duration-300">
                 <div className="text-center mb-4">
-                  <img 
-                    src="/mascot.png" 
-                    alt="AI Coach Mascot" 
-                    className="w-32 h-32 mx-auto mb-4 drop-shadow-lg"
-                  />
-                  <h3 className="font-raleway font-semibold text-lg text-purple-700 mb-2">
+                  <div className="relative inline-block mb-6">
+                    <div className="absolute inset-0 bg-gradient-to-br from-purple-200 to-yellow-200 rounded-full blur-xl opacity-30"></div>
+                    <div className="relative bg-gradient-to-br from-purple-50 to-yellow-50 rounded-full p-6 shadow-lg">
+                      <img 
+                        src="/mascot.png" 
+                        alt="AI Coach Mascot" 
+                        className="w-20 h-20 mx-auto drop-shadow-md"
+                      />
+                    </div>
+                  </div>
+                  <h3 className="font-raleway font-bold text-xl text-gray-900 mb-3">
                     Meet Your AI Transformation Guide
                   </h3>
-                  <p className="text-gray-600 text-sm">
-                    Your friendly companion on the journey from corporate professional to business owner
+                  <p className="text-gray-600 text-sm leading-relaxed max-w-xs mx-auto">
+                    Your dedicated AI specialist guiding ambitious professionals toward solopreneurship success
                   </p>
+                  <div className="mt-4 flex justify-center space-x-2">
+                    <div className="w-2 h-2 bg-purple-400 rounded-full"></div>
+                    <div className="w-2 h-2 bg-yellow-400 rounded-full"></div>
+                    <div className="w-2 h-2 bg-purple-400 rounded-full"></div>
+                  </div>
                 </div>
               </div>
             </div>
