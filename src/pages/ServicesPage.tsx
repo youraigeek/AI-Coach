@@ -27,7 +27,7 @@ const ServicesPage = () => {
               {/* Mascot accent */}
               <div className="absolute -bottom-4 -right-4 w-16 h-16 bg-white rounded-full p-2 shadow-lg">
                 <img 
-                  src="/mascot.png" 
+                  src="/mascot-removebg-preview (6).png" 
                   alt="AI Coach Mascot" 
                   className="w-full h-full object-contain drop-shadow-sm"
                 />
@@ -135,7 +135,7 @@ const ServicesPage = () => {
             {/* Service cards with professional images */}
             <div className="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow duration-300">
               <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <img src="/mascot.png" alt="AI Coach" className="w-10 h-10 object-contain" />
+                <img src="/mascot-removebg-preview (6).png" alt="AI Coach" className="w-10 h-10 object-contain" />
               </div>
               <h3 className="font-raleway font-semibold text-lg text-center mb-3">1-on-1 AI Coaching</h3>
               <p className="text-gray-600 text-center text-sm">
@@ -145,7 +145,7 @@ const ServicesPage = () => {
 
             <div className="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow duration-300">
               <div className="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <img src="/mascot.png" alt="AI Coach" className="w-10 h-10 object-contain" />
+                <img src="/mascot-removebg-preview (6).png" alt="AI Coach" className="w-10 h-10 object-contain" />
               </div>
               <h3 className="font-raleway font-semibold text-lg text-center mb-3">Group Workshops</h3>
               <p className="text-gray-600 text-center text-sm">
@@ -155,7 +155,7 @@ const ServicesPage = () => {
 
             <div className="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow duration-300">
               <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <img src="/mascot.png" alt="AI Coach" className="w-10 h-10 object-contain" />
+                <img src="/mascot-removebg-preview (6).png" alt="AI Coach" className="w-10 h-10 object-contain" />
               </div>
               <h3 className="font-raleway font-semibold text-lg text-center mb-3">Knowledge Programs</h3>
               <p className="text-gray-600 text-center text-sm">
