@@ -33,6 +33,13 @@ function App() {
           </Routes>
         </main>
         <Footer />
+        
+        {/* Vapi Voice and Chat Widget */}
+        <vapi-widget 
+          assistant-id="782931dc-51f9-4c96-9f99-a56f967264d2" 
+          public-key="45b82946-e45a-48e4-b450-a361346d45ed" 
+          mode="both"
+        ></vapi-widget>
       </div>
     </Router>
   );
