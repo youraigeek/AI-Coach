@@ -69,10 +69,10 @@
             
             try {
                 // Initialize Vapi with proper configuration
-                vapi = new Vapi({
+                vapi = Vapi.init({
                     assistantId: "782931dc-51f9-4c96-9f99-a56f967264d2",
-                    publicKey: "45b82946-e45a-48e4-b450-a361346d45ed",
-                    voiceMode: true
+                    voiceMode: true,
+                    publicKey: "45b82946-e45a-48e4-b450-a361346d45ed"
                 });
                 
                 console.log('Vapi initialized successfully');
