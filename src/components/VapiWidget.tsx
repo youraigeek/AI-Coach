@@ -1,57 +1,36 @@
 import React, { useEffect, useState, useRef } from 'react';
-
-declare global {
-  interface Window {
-    Vapi: any;
-  }
-}
+import Vapi from '@vapi-ai/web';
 
 const VapiWidget: React.FC = () => {
   const [isCallActive, setIsCallActive] = useState(false);
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
   const vapiRef = useRef<any>(null);
 
   useEffect(() => {
-    // Load Vapi SDK
-    const script = document.createElement('script');
-    script.src = 'https://cdn.jsdelivr.net/npm/vapi-aiweb/latest/dist/index.js';
-    script.type = 'module';
-    
-    script.onload = () => {
-      try {
-        // Initialize Vapi with your credentials
-        vapiRef.current = new window.Vapi('45b82946-e45a-48e4-b450-a361346d45ed');
-        
-        // Set up event listeners
-        vapiRef.current.on('call-start', () => {
-          console.log('Call started');
-          setIsCallActive(true);
-        });
+    try {
+      // Initialize Vapi with your credentials
+      vapiRef.current = new Vapi('45b82946-e45a-48e4-b450-a361346d45ed');
+      
+      // Set up event listeners
+      vapiRef.current.on('call-start', () => {
+        console.log('Call started');
+        setIsCallActive(true);
+      });
 
-        vapiRef.current.on('call-end', () => {
-          console.log('Call ended');
-          setIsCallActive(false);
-        });
+      vapiRef.current.on('call-end', () => {
+        console.log('Call ended');
+        setIsCallActive(false);
+      });
 
-        vapiRef.current.on('error', (error: any) => {
-          console.error('Vapi error:', error);
-          setIsCallActive(false);
-        });
+      vapiRef.current.on('error', (error: any) => {
+        console.error('Vapi error:', error);
+        setIsCallActive(false);
+      });
 
-        console.log('Vapi initialized successfully');
-        setIsLoading(false);
-      } catch (error) {
-        console.error('Failed to initialize Vapi:', error);
-        setIsLoading(false);
-      }
-    };
-
-    script.onerror = () => {
-      console.error('Failed to load Vapi SDK');
-      setIsLoading(false);
-    };
-
-    document.head.appendChild(script);
+      console.log('Vapi initialized successfully');
+    } catch (error) {
+      console.error('Failed to initialize Vapi:', error);
+    }
 
     return () => {
       // Cleanup
@@ -62,7 +41,6 @@ const VapiWidget: React.FC = () => {
           console.error('Error stopping Vapi:', error);
         }
       }
-      document.head.removeChild(script);
     };
   }, []);
 
