@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vapi Widget</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: transparent;
+            overflow: hidden;
+        }
+        vapi-widget {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <script
+        src="https://unpkg.com/@vapi-ai/client-sdk-react/dist/embed/widget.umd.js"
+        async
+        type="text/javascript"
+    ></script>
+    
+    <vapi-widget
+        assistant-id="782931dc-51f9-4c96-9f99-a56f967264d2"
+        public-key="45b82946-e45a-48e4-b450-a361346d45ed"
+        mode="both"
+        microphonePermissionPrompt="true">
+    </vapi-widget>
+</body>
+</html>
