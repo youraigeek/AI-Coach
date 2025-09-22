@@ -7,12 +7,11 @@ const VapiWidget: React.FC = () => {
         position: 'fixed',
         bottom: '20px',
         right: '20px',
-        zIndex: 999999,
+        zIndex: 1000,
         borderRadius: '12px',
         overflow: 'hidden',
         boxShadow: '0 8px 32px rgba(0, 0, 0, 0.12)',
-        backgroundColor: 'white',
-        border: '1px solid rgba(0, 0, 0, 0.1)',
+        backgroundColor: 'transparent',
       }}
     >
       <iframe
@@ -23,6 +22,7 @@ const VapiWidget: React.FC = () => {
           border: 'none',
           backgroundColor: 'transparent',
           display: 'block',
+          borderRadius: '12px',
         }}
         title="AI Assistant - Click to Chat"
         allow="microphone"

@@ -18,6 +18,7 @@
             cursor: pointer;
             transition: all 0.3s ease;
             border-radius: 12px;
+            position: relative;
         }
         
         body:hover {
@@ -25,7 +26,7 @@
             box-shadow: 0 4px 16px rgba(106, 13, 173, 0.3);
         }
         
-        .widget-icon {
+        .widget-button {
             width: 32px;
             height: 32px;
             background: white;
@@ -37,15 +38,23 @@
             color: #6A0DAD;
             font-weight: bold;
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            border: none;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        
+        .widget-button:hover {
+            transform: scale(1.1);
         }
         
         .pulse {
             position: absolute;
             width: 80px;
             height: 80px;
-            border: 2px solid rgba(106, 13, 173, 0.4);
+            border: 2px solid rgba(255, 255, 255, 0.3);
             border-radius: 12px;
             animation: pulse 2s infinite;
+            pointer-events: none;
         }
         
         @keyframes pulse {
@@ -58,46 +67,87 @@
                 opacity: 0;
             }
         }
+
+        /* Hide the default Vapi widget */
+        vapi-widget {
+            display: none !important;
+        }
     </style>
 </head>
 <body>
     <div class="pulse"></div>
-    <div class="widget-icon">AI</div>
+    <button class="widget-button" id="vapiButton">AI</button>
     
-    <script
-        src="https://unpkg.com/@vapi-ai/client-sdk-react/dist/embed/widget.umd.js"
-        async
-        type="text/javascript"
-    ></script>
+    <!-- Load Vapi SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@vapi-ai/web@latest/dist/index.js"></script>
     
     <script>
-        // Initialize Vapi widget when the script loads
-        document.addEventListener('DOMContentLoaded', function() {
-            // Wait for the Vapi script to load
-            function initVapi() {
-                if (typeof window.VapiWidget !== 'undefined') {
-                    const vapiWidget = document.createElement('vapi-widget');
-                    vapiWidget.setAttribute('assistant-id', '782931dc-51f9-4c96-9f99-a56f967264d2');
-                    vapiWidget.setAttribute('public-key', '45b82946-e45a-48e4-b450-a361346d45ed');
-                    
-                    // Hide the default widget styling and use our custom button
-                    vapiWidget.style.display = 'none';
-                    document.body.appendChild(vapiWidget);
-                    
-                    // Add click handler to our custom button
-                    document.body.addEventListener('click', function() {
-                        // Trigger the Vapi widget
-                        if (vapiWidget && vapiWidget.click) {
-                            vapiWidget.click();
-                        }
-                    });
-                } else {
-                    setTimeout(initVapi, 5000);
-                }
+        let vapi = null;
+        let isCallActive = false;
+
+        // Initialize Vapi when the page loads
+        window.addEventListener('load', function() {
+            try {
+                // Initialize Vapi with your credentials
+                vapi = new window.Vapi('45b82946-e45a-48e4-b450-a361346d45ed');
+                
+                // Set up event listeners
+                vapi.on('call-start', () => {
+                    console.log('Call started');
+                    isCallActive = true;
+                    updateButtonState();
+                });
+
+                vapi.on('call-end', () => {
+                    console.log('Call ended');
+                    isCallActive = false;
+                    updateButtonState();
+                });
+
+                vapi.on('error', (error) => {
+                    console.error('Vapi error:', error);
+                    isCallActive = false;
+                    updateButtonState();
+                });
+
+                console.log('Vapi initialized successfully');
+            } catch (error) {
+                console.error('Failed to initialize Vapi:', error);
             }
-            
-            initVapi();
         });
+
+        // Handle button click
+        document.getElementById('vapiButton').addEventListener('click', function() {
+            if (!vapi) {
+                console.error('Vapi not initialized');
+                return;
+            }
+
+            try {
+                if (isCallActive) {
+                    // End the call
+                    vapi.stop();
+                } else {
+                    // Start a call with your assistant
+                    vapi.start('782931dc-51f9-4c96-9f99-a56f967264d2');
+                }
+            } catch (error) {
+                console.error('Error toggling call:', error);
+            }
+        });
+
+        function updateButtonState() {
+            const button = document.getElementById('vapiButton');
+            if (isCallActive) {
+                button.textContent = '⏹';
+                button.style.background = '#ff4444';
+                button.style.color = 'white';
+            } else {
+                button.textContent = 'AI';
+                button.style.background = 'white';
+                button.style.color = '#6A0DAD';
+            }
+        }
     </script>
 </body>
 </html>
