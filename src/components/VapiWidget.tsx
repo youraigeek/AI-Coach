@@ -2,22 +2,32 @@ import React from 'react';
 
 const VapiWidget: React.FC = () => {
   return (
-    <iframe
-      src="/vapi-widget.html"
+    <div
       style={{
         position: 'fixed',
         bottom: '20px',
         right: '20px',
-        width: '200px',
-        height: '600px',
-        border: 'none',
-        borderRadius: '50%',
-        backgroundColor: 'transparent',
         zIndex: 999999,
+        borderRadius: '12px',
+        overflow: 'hidden',
+        boxShadow: '0 8px 32px rgba(0, 0, 0, 0.12)',
+        backgroundColor: 'white',
+        border: '1px solid rgba(0, 0, 0, 0.1)',
       }}
-      title="Vapi AI Assistant"
-      allow="microphone"
-    />
+    >
+      <iframe
+        src="/vapi-widget.html"
+        style={{
+          width: '80px',
+          height: '80px',
+          border: 'none',
+          backgroundColor: 'transparent',
+          display: 'block',
+        }}
+        title="AI Assistant - Click to Chat"
+        allow="microphone"
+      />
+    </div>
   );
 };
 

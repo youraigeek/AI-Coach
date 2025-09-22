@@ -8,26 +8,96 @@
         body {
             margin: 0;
             padding: 0;
-            background: transparent;
+            background: linear-gradient(135deg, #6A0DAD 0%, #8B1EDB 100%);
             overflow: hidden;
+            width: 80px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-radius: 12px;
         }
-        vapi-widget {
-            display: block;
-            width: 100%;
-            height: 100%;
+        
+        body:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 16px rgba(106, 13, 173, 0.3);
+        }
+        
+        .widget-icon {
+            width: 32px;
+            height: 32px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            color: #6A0DAD;
+            font-weight: bold;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+        
+        .pulse {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            border: 2px solid rgba(106, 13, 173, 0.4);
+            border-radius: 12px;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1.2);
+                opacity: 0;
+            }
         }
     </style>
 </head>
 <body>
+    <div class="pulse"></div>
+    <div class="widget-icon">AI</div>
+    
     <script
         src="https://unpkg.com/@vapi-ai/client-sdk-react/dist/embed/widget.umd.js"
         async
         type="text/javascript"
     ></script>
     
-    <vapi-widget
-        assistant-id="782931dc-51f9-4c96-9f99-a56f967264d2"
-        public-key="45b82946-e45a-48e4-b450-a361346d45ed">
-    </vapi-widget>
+    <script>
+        // Initialize Vapi widget when the script loads
+        document.addEventListener('DOMContentLoaded', function() {
+            // Wait for the Vapi script to load
+            function initVapi() {
+                if (typeof window.VapiWidget !== 'undefined') {
+                    const vapiWidget = document.createElement('vapi-widget');
+                    vapiWidget.setAttribute('assistant-id', '782931dc-51f9-4c96-9f99-a56f967264d2');
+                    vapiWidget.setAttribute('public-key', '45b82946-e45a-48e4-b450-a361346d45ed');
+                    
+                    // Hide the default widget styling and use our custom button
+                    vapiWidget.style.display = 'none';
+                    document.body.appendChild(vapiWidget);
+                    
+                    // Add click handler to our custom button
+                    document.body.addEventListener('click', function() {
+                        // Trigger the Vapi widget
+                        if (vapiWidget && vapiWidget.click) {
+                            vapiWidget.click();
+                        }
+                    });
+                } else {
+                    setTimeout(initVapi, 100);
+                }
+            }
+            
+            initVapi();
+        });
+    </script>
 </body>
 </html>
